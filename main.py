@@ -46,6 +46,8 @@ while True:
 else:
     print("Opção invalida!")
     continued = str(input("\tDeseja continua? [s/n]\n "))
+    while FALSE:
+        
     
 
      
