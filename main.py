@@ -1,15 +1,15 @@
 from calculator import Calculation #I imported the calculation class
 import os
 
-calc = Calculation() 
-continued = ('s','n', 'S', 'N')
+calc = Calculation() #name given to Calculator class
+continued = ('s','n', 'S', 'N') #tupla criada que tenha a opção de recomeçar ou quebrar
 while True:
         
     operation = int(input("\t\tEscolha a operação:\n\t1 - (Soma)  2 - (Subtração)  3 - (Multiplicação)\n\t4 - (Divisão)  5 - (Potenciação) 6 - (Radiação)  \n\n\t\t"))
-    while operation > 6:
+    while operation > 6: #if the whole number is greater than 6
         print("Tente novamente D;\n\n")
         break
-    else:
+    else: #if the integers are less than or equal to 6, you will be given two options of numbers you want to calculate
         num1 = float(input("Digite o primeiro numero: "))
         num2 = float(input("Digite o segundo numero: "))
         
